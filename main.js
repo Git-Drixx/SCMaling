@@ -106,7 +106,7 @@
              version, 
          printQRInTerminal: true, 
          auth: state, 
-         browser: ['Ikratos-MD', 'Safari', '3.1.0'], 
+         browser: ['MalingSC', 'Safari', '3.1.0'], 
  getMessage: async (key) => (store.loadMessage(key.remoteJid, key.id) || store.loadMessage(key.id) || {}).message,
 //get message above to resolve message failed to send, "waiting for message", can be retried 
                patchMessageBeforeSending: (message) => { 
