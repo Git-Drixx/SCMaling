@@ -270,9 +270,9 @@ export async function handler(chatUpdate) {
                 if (!('isBanned' in chat))
                     chat.isBanned = false
                 if (!('welcome' in chat))
-                    chat.welcome = true
+                    chat.welcome = false
                 if (!('gpt' in chat))
-                    chat.gpt = false  
+                    chat.gpt = true  
                 if (!('detect' in chat))
                     chat.detect = false
                 if (!('sWelcome' in chat))
@@ -296,13 +296,13 @@ export async function handler(chatUpdate) {
                 if (!('autoSticker' in chat))
                     chat.autoSticker = false    
                 if (!('nsfw' in chat))
-                    chat.nsfw = false
+                    chat.nsfw = true
                 if (!('premium' in chat))
-                    chat.premium = false
+                    chat.premium = true
                 if (!('premiumTime' in chat)) 
-                    chat.premiumTime = false
+                    chat.premiumTime = true
                 if (!('premnsfw' in chat))
-                    chat.premnsfw = false
+                    chat.premnsfw = true
                 if (!('autochat' in chat))
                     chat.autochat = false  
                 if (!isNumber(chat.expired))
